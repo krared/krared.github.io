@@ -1,25 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        .logo {
-            max-width: 200px;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-    <img src="https://krared.wordpress.com/wp-content/uploads/2022/06/2183128.png" alt="logo" class="logo">
-</body>
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Цитаты · krared</title>
+<style>
+:root{color-scheme:light dark;font:18px/1.6 system-ui,sans-serif;background:#faf9f6;color:#242424}
+*{box-sizing:border-box}body{margin:0}main{max-width:760px;margin:auto;padding:12vh 24px 32px;min-height:90vh}header{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;opacity:.6}figure{margin:3rem 0 2rem}blockquote{margin:0;font:clamp(1.5rem,4vw,2.5rem)/1.4 Georgia,serif;overflow-wrap:anywhere}figcaption{margin-top:1.2rem;opacity:.65}nav{display:flex;gap:12px;align-items:center}button,summary{cursor:pointer;color:inherit}button{font:inherit;background:transparent;border:1px solid #8888;border-radius:6px;padding:8px 16px}button:hover{background:#8882}button:focus-visible,summary:focus-visible{outline:2px solid currentColor;outline-offset:4px}button:disabled{opacity:.4;cursor:wait}details{margin-top:2rem}summary{list-style:none;display:inline-block;font-size:1.8rem;padding:0 12px}summary::-webkit-details-marker{display:none}summary::before{content:'+'}details[open]>summary::before{content:'−'}ol{padding-left:1.5rem}li{padding:1rem 0;border-bottom:1px solid #8883;overflow-wrap:anywhere}li p{margin:0}li small{opacity:.65}footer{text-align:center;padding:24px}footer img{width:48px;height:auto}#status{font-size:.8rem;opacity:.65}noscript{display:block;margin:2rem 0}@media(prefers-color-scheme:dark){:root{background:#18191b;color:#e5e3df}}@media(max-width:480px){main{padding-top:8vh}figure{margin-top:2rem}}
+</style>
+<main>
+<header>krared / цитаты</header>
+<figure aria-live="polite" aria-atomic="true"><blockquote id="quote">Загружаю цитаты…</blockquote><figcaption id="author"></figcaption></figure>
+<nav><button id="next" disabled>Другая цитата</button></nav>
+<p id="status" role="status"></p>
+<details id="all"><summary aria-label="Все цитаты" title="Все цитаты"></summary><ol id="list"></ol></details>
+<noscript>Для выбора цитаты включите JavaScript. <a href="quotes.txt">Открыть все цитаты в TXT</a>.</noscript>
+</main>
+<footer><img src="logo.png" alt="Логотип krared" width="48" loading="lazy"></footer>
+<script language="YoptaScript" src="app.yopta"></script>
+<script src="vendor/yopta.js"></script>
 </html>
